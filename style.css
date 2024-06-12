@@ -32,7 +32,7 @@ header,.library{
    padding-top: 20px;
    min-width: fit-content;
 }
-.left>*{
+.left>*:not(button){
     padding-left: 25px;
 }
 
@@ -97,4 +97,38 @@ margin-bottom: 15px;
     border-radius: 20px;
     font-weight: bolder;
     margin-top: 15px;
+}
+.footer{
+    margin: 60px 0px;
+    font-size: smaller;
+}
+.footer>*{
+    margin-bottom: 15px;
+}
+.footer a{
+    text-decoration: none;
+    color: gray;
+}
+.footer>div{
+    display: flex;
+    gap: 15px;
+}
+.left>:last-child{
+    display: block;
+    margin-left: 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 30px;
+    padding: 6px;
+
+}
+.language{
+    width: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.language>img{
+    max-width: 30px;
 }
