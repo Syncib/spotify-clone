@@ -7,6 +7,9 @@
 header>*{
     margin-bottom: 20px;
 }
+header>:nth-child(3){
+    padding-bottom: 15px;
+}
 .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -23,12 +26,14 @@ header,.library{
     background-color:  #121212;
     color: white;
 }
+
 .left{
    width: 25vw;
    padding-top: 20px;
+   min-width: fit-content;
 }
 .left>*{
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .right{
@@ -62,13 +67,14 @@ header,.library{
     margin-right: 20px;
 }
 
-.library>:first-child{
-margin-bottom: 20px;
+.library>*{
+margin-bottom: 15px;
 }
 .playcard{
     background-color: #242424;
     border-radius: 15px;
     padding: 20px 14px ;
+    margin-left: -20px;
 }
 .playcard>*{
     margin-bottom: 5px;
@@ -81,6 +87,7 @@ margin-bottom: 20px;
 }
 .playcard>h2{
     font-size: small;
+    font-weight: 500;
 }
 .playcard>button{
     background-color: white;
@@ -89,4 +96,5 @@ margin-bottom: 20px;
     border: none;
     border-radius: 20px;
     font-weight: bolder;
+    margin-top: 15px;
 }
