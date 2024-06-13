@@ -21,6 +21,8 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    display: flex;
+    gap: 40px;
 }
 header,.library{
     background-color:  #121212;
@@ -39,6 +41,7 @@ header,.library{
 .right{
     background-color: #121212;
     width: 75vw;
+    margin-top: 20px;
 }
 
 .flex{
@@ -130,5 +133,68 @@ margin-bottom: 15px;
     align-items: center;
 }
 .language>img{
-    max-width: 30px;
+    max-width: 20px;
+}
+.arrows{
+    display:flex;
+    gap: 25px;
+}
+.log-btns>*{
+    border: none;
+    padding: 15px 30px;
+    border-radius: 45px;
+    font-size: medium;
+    font-weight: 600;
+}
+.log-btns>:first-child{
+    color: gray;
+    background-color: transparent;
+}
+
+.top-sec{
+    justify-content: space-between;
+    padding: 10px 30px 0px;
+    position: sticky;
+}
+.playful-sec{
+    background-color: #1e1e1e;
+    padding-left: 30px;
+    color: white;
+}
+.card{
+    width: 200px;
+    position: relative;
+}
+.card>img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center center;
+}
+.card>p{
+    color: gray;
+}
+.rounded{
+    border-radius: 100%;
+}
+.playbutton{
+    max-width: fit-content;
+    background-color: green;
+    display: flex;
+    padding: 15px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    bottom: 60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.card:hover>.playbutton{
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.cards{
+    gap: 20px;
 }
